@@ -1,0 +1,42 @@
+# Python caches & packaging
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments & local secrets
+.venv/
+venv/
+env/
+.env
+.env.*
+*.pem
+*.key
+secrets.json
+credentials.json
+
+# Generated RAG databases (rebuild cleanly via `python ingest.py`)
+data/
+*.sqlite
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
+*.db
+chroma/
+
+# Third-party raw sources downloaded via `python fetch_sources.py`
+# Excluded from Git history for copyright safety and GitHub 100 MB file limits.
+raw_sources/
+
+# IDEs, OS junk & temporary artifacts
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.pytest_cache/
+.ruff_cache/
+*.tmp
+*.log

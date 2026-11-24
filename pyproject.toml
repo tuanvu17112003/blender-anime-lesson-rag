@@ -1,0 +1,16 @@
+[project]
+name = "blender-anime-lesson-rag"
+version = "0.1.0"
+description = "Offline Hybrid RAG + MCP knowledge base synthesized from curated 3D anime modeling, rigging, shading, and animation lessons in Blender 4.2 / 5.2+."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "beautifulsoup4>=4.12.0",
+    "chromadb>=1.0.0",
+    "onnxruntime>=1.18.0",
+    "requests>=2.31.0",
+    "yt-dlp>=2024.0.0",
+]
+
+[project.scripts]
+anime-rag = "anime_rag:main"
